@@ -18,6 +18,7 @@ postgresql:
   primary: 
     persistence:
       size: "1Gi"
+    storageClassName: example-nfs
     initdb:
       user: postgres
       password: postgres
@@ -31,6 +32,8 @@ redis:
   master:
     persistence:
       size: "1Gi"
+    storageClassName: example-nfs
+    
 kafka: 
   persistence:
     size: "1Gi"
